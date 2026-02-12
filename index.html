@@ -1,14 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="U
-    TF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SocialSphere — Регистрация</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Заголовок первого уровня</h1>
-    <p>Это видимый контент страницы.</p>
+
+  <div class="container">
+    <div class="header">
+      <h1>SocialSphere</h1>
+      <p>Создайте аккаунт за 30 секунд</p>
+    </div>
+
+    <div class="form-container">
+      <form>
+
+        <div class="form-group">
+          <label for="firstName">Имя</label>
+          <input type="text" id="firstName" placeholder="Александр" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Фамилия</label>
+          <input type="text" id="lastName" placeholder="Иванов" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" placeholder="Минимум 8 символов" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Повторите пароль</label>
+          <input type="password" id="confirmPassword" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn">Зарегистрироваться</button>
+
+        <div class="error-message" id="errorMessage"></div>
+
+      </form>
+
+      <div class="login-link">
+        Уже есть аккаунт? <a href="#">Войти</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
